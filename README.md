@@ -1,6 +1,11 @@
-# Benchmark 
+#  [Benchmark Goal: 15 Coding - Exercises Issue 144]
+(https://github.com/GuildCrafts/web-development-js/issues/144).
 
-(The original Benchmark Goal is [here](https://github.com/GuildCrafts/web-development-js/issues/144).
+## Team Name: melted-springhare
+Member: Candida Haynes
+
+(https://github.com/TheLady/web-development-js/blob/thelady-benchmark/README.md). 
+(Original Project)
 
 ##  Goals, Outline, and Process-Oriented Quality Metrics
 
