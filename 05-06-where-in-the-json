@@ -29,7 +29,7 @@ If you wish to find the name of the first play in the list of Shakespeare's work
 
 You would say that the value located at this path is "Romeo and Juliet". The value "tumblr" is located at:
 
-`favoriteSites -> 2`
+`favoriteSites -> 0`
 
 Your task is to find a user-provided key hidden in a JSON object.
 
@@ -41,10 +41,157 @@ JSON object.
 
 **Output:**
 
-The search path for the string in the format shown above (each element should be joined together with `->` between them.). Each element in the path will either be an integer (if indexing a list) or a string (if indexing an object).
+The search path for the string in the format shown above (each element should be joined together with `->` between them.). 
+
+Each element in the path will either be an integer (if indexing a list) or a string (if indexing an object).
 
 ### Strategy
 
+find 2 json objects with nested data.
+write out their paths using the notes above
+possibly use twitter data or some other json object to find nested data
 
+find beter examples
+start with test for inputs and outputs
 
 ###Code
+
+The two example JSON data are on this page: http://adobe.github.io/Spry/samples/data_region/JSONDataSetSample.html
+
+Input:
+{
+    "id": "0001",
+    "type": "donut",
+    "name": "Cake",
+    "ppu": 0.55,
+    "batters":
+        {
+            "batter":
+                [
+                    { "id": "1001", "type": "Regular" },
+                    { "id": "1002", "type": "Chocolate" },
+                    { "id": "1003", "type": "Blueberry" },
+                    { "id": "1004", "type": "Devil's Food" }
+                ]
+        },
+    "topping":
+        [
+            { "id": "5001", "type": "None" },
+            { "id": "5002", "type": "Glazed" },
+            { "id": "5005", "type": "Sugar" },
+            { "id": "5007", "type": "Powdered Sugar" },
+            { "id": "5006", "type": "Chocolate with Sprinkles" },
+            { "id": "5003", "type": "Chocolate" },
+            { "id": "5004", "type": "Maple" }
+        ]
+}
+
+Output:
+
+--
+More Deeply Nested Data
+
+Example 5
+
+In the case where you have an array of highly nested objects:
+
+[
+    {
+        "id": "0001",
+        "type": "donut",
+        "name": "Cake",
+        "ppu": 0.55,
+        "batters":
+            {
+                "batter":
+                    [
+                        { "id": "1001", "type": "Regular" },
+                        { "id": "1002", "type": "Chocolate" },
+                        { "id": "1003", "type": "Blueberry" },
+                        { "id": "1004", "type": "Devil's Food" }
+                    ]
+            },
+        "topping":
+            [
+                { "id": "5001", "type": "None" },
+                { "id": "5002", "type": "Glazed" },
+                { "id": "5005", "type": "Sugar" },
+                { "id": "5007", "type": "Powdered Sugar" },
+                { "id": "5006", "type": "Chocolate with Sprinkles" },
+                { "id": "5003", "type": "Chocolate" },
+                { "id": "5004", "type": "Maple" }
+            ]
+    },
+    {
+        "id": "0002",
+        "type": "donut",
+        "name": "Raised",
+        "ppu": 0.55,
+        "batters":
+            {
+                "batter":
+                    [
+                        { "id": "1001", "type": "Regular" }
+                    ]
+            },
+        "topping":
+            [
+                { "id": "5001", "type": "None" },
+                { "id": "5002", "type": "Glazed" },
+                { "id": "5005", "type": "Sugar" },
+                { "id": "5003", "type": "Chocolate" },
+                { "id": "5004", "type": "Maple" }
+            ]
+    },
+    {
+        "id": "0003",
+        "type": "donut",
+        "name": "Old Fashioned",
+        "ppu": 0.55,
+        "batters":
+            {
+                "batter":
+                    [
+                        { "id": "1001", "type": "Regular" },
+                        { "id": "1002", "type": "Chocolate" }
+                    ]
+            },
+        "topping":
+            [
+                { "id": "5001", "type": "None" },
+                { "id": "5002", "type": "Glazed" },
+                { "id": "5003", "type": "Chocolate" },
+                { "id": "5004", "type": "Maple" }
+            ]
+    }
+]
+the JSON data set uses the "path" constructor option to extract the matching data out from each object in the array. Each match then becomes a row in the data set. In this example, we want the data set to select all of the "batter" objects and flatten them into rows:
+
+var dsExample5 = new Spry.Data.JSONDataSet("../../data/json/array-03.js", { path: "batters.batter" });
+
+
+...
+
+<div class="liveSample" spry:region="dsExample5">
+    <p>Batters:</p>
+    <ul>
+        <li spry:repeat="dsExample5">{type} ({id})</li>
+    </ul>
+</div>
+Here's a live example:
+
+Batters:
+
+Regular (1001)
+Chocolate (1002)
+Blueberry (1003)
+Devil's Food (1004)
+Regular (1001)
+Regular (1001)
+Chocolate (1002)
+ 
+
+
+
+
+

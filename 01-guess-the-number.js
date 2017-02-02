@@ -52,6 +52,8 @@ If they don't type a number, print "You might be a psychic, but you I cannot tel
 If the number is too high, print, "Your number is too high. You are not ready to be a computer psychic."
 If the number is too low, print "Your number is too low. You are not ready to be a computer psychic."
 
+Use Stack data structure or hash table
+
 Stretch Goal: Let them try again.
 
 

@@ -34,6 +34,19 @@ AERETOXMYCNS_B
 ```
 
 ### Strategy
+things to build:
+  transition between turns
+  transition between games
+  array of 100 tiles that shrinks each time a tile is played
+  container for used/out-of-play tiles
+  container for in-play tiles 
+  turn (play all letters or match a word)
+  container that counts points
+
+  keys are counters
+
+  use stack data structure to populate arrays
+  queue or dequque to manipulate arrays of available letters
 
 
 

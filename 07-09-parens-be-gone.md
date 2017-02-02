@@ -27,7 +27,10 @@ In the above example, `(7)` would be the proper stripping of parentheses.
 ```
 
 ### Strategy
+translate parentheses into binary values  
 
+if [0] == ( and index value at the end of the array is )
+and if index at [1] and the value at [last index - 1] is 
 
 
 ###Code

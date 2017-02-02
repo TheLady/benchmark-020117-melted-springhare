@@ -16,4 +16,8 @@ isVowel = ['a','e','i','o','u']
 function to delete something from a set
 find out efficient way to check whole list for vowels
 
+stack data structure
+if the element is a vowel, pop
+
+
 ###Code

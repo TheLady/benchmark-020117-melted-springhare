@@ -9,7 +9,10 @@ Put the code into a [JSBin](http://jsbin.com) instance to hear some sounds direc
 HINT: I'm just gonna leave [this](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext) here.
 
 ### Strategy
+assign each solfege syllable to a sound node (OscillatorNode or  PeriodicWave)
+fa = activate some node
 
+if input == 'fa' play sound in node faNode
 
 
 ###Code

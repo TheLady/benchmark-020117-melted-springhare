@@ -24,10 +24,14 @@ For example:
 
 So `1100000` is base Fibonacci for `21`
 
-Write a program that converts from decimal to base Fibonacci and from Fibonacci to decimal.
+PROBLEM: Write a program that converts from decimal to base Fibonacci and from Fibonacci to decimal.
 
 ### Strategy
+Build:
+  create a simple Fibonacci series
+  a function that creates a Fibonacci number
+  apply that function to decimal input and return a Fibonacci number
 
-
+(base 2 is just an example)
 
 ###Code
