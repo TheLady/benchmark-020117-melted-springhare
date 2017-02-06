@@ -54,5 +54,3 @@ To get a proper self assessment:
 
 [mit-license]: https://opensource.org/licenses/MIT
 
-2
-
