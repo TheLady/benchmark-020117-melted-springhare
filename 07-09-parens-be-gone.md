@@ -27,10 +27,19 @@ In the above example, `(7)` would be the proper stripping of parentheses.
 ```
 
 ### Strategy
-translate parentheses into binary values  
+<!-- translate parentheses into binary values   -->
 
-if [0] == ( and index value at the end of the array is )
-and if index at [1] and the value at [last index - 1] is 
+remove paren if [0] == ( and index value at the end of the array is )
+and if index at [1] and the value at [last index - 1] is ) delete [0] and [index value at end of array]
+
+make the input a string (including parens)
+Count number of parens at end of input
+Count number of parens at beginning of input
+
+if countFrontEnd===countBackEnd delete paren at index[0] and [lastIndex]
+
+
+
 
 
 ###Code

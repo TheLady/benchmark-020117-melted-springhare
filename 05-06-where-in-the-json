@@ -45,7 +45,7 @@ The search path for the string in the format shown above (each element should be
 
 Each element in the path will either be an integer (if indexing a list) or a string (if indexing an object).
 
-### Strategy
+### Strategy (notes, no real strategy here)
 
 find 2 json objects with nested data.
 write out their paths using the notes above
@@ -191,7 +191,7 @@ Regular (1001)
 Chocolate (1002)
  
 
-
+### Code
 
 
 

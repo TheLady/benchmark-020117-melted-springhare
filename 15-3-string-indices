@@ -1,0 +1,67 @@
+### 3: String Indices
+
+Write a program that parses the words in a string by providing a numerical index, similar to how you would access an element in array with a numerical index.
+
+**Example:**
+
+```"Catch me outside, how about that?"```
+
+If you asked for the word at index `3` you would get `outside` back (for the purposes of this challenge, our index will start at `1`, not `0`).
+
+If you ask for the word at index `7`, your program should return an empty string (`''`) because the string contains only 6 words. Negative indices should also return an empty string (`''`).
+
+### Strategy
+variables
+  phrase
+  array
+function that identifies index when the indices are static
+  print the value at that index
+  if the index length is greater than the index entered, create a new index with an empty string - create an empty string at index [0] (pop?) 
+ 
+ if index has a negative value, add an empty element to a new array called empty
+
+  use forEach to assign index of an empty set to -1
+  
+  if index== -1 
+  console.log(" ")
+
+  else console.log([index])
+
+### Code
+
+function { }
+var phraseStr = "Catch me outside, how about that?"
+var phraseArr = str.split(" ");
+
+
+Notes
+console.log(phraseArr.length) 
+
+console.log(fruits.length);
+
+Find the index of an item in the Array
+fruits.push('Mango');
+// ["Strawberry", "Banana", "Mango"]
+
+
+phraseArr.push(index)
+
+
+var pos = fruits.indexOf('Banana');
+// 1
+
+
+fruits.forEach(function(item, index, array) {
+  console.log(item, index);
+});
+// Apple 0
+// Banana 1
+
+var first = fruits[0];
+// Apple
+
+var last = fruits[fruits.length - 1];
+// Banana
+
+
+

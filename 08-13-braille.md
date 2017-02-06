@@ -20,6 +20,21 @@ helloworld
 ```
 
 ### Strategy
+write out each braille character in 0.
+
+make each braille character a string and assign it a variable that is a letter
+
+make letter-braille key-value base 6 or base 2 notation - do I define a letter or define a dot
+
+make it a base 10 number (because it's easier for humans to understand)
+
+stretch - write a function to automate the matching of key-value pair/ generate key-value pair w a function
+
+output each letter
+
+
+
+  
 
 
 

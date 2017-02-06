@@ -4,6 +4,7 @@ Write a program that will generate a number between 1 and 100. Your program will
 
 When the user types a guess, the program should tell them if they won (the guess matched the computer's number), if their guess was higher than the number the computer generated, OR if the guess was lower than the number the computer generated. Terminate the program if the user types "exit".
 
+
 <!-- ### Strategy
 console.log "enter a number"
 variable to store user input
@@ -12,11 +13,16 @@ function to compare input and array
 message for user: higher/lower/winning!
   if else
 
-if else in mocha tests? -->
 
+guess = userInput
 
+var function(computerNum, userInput) {
+  array
+}
 
-<!-- Code -->
+for (x >= 1; x <= 100; ) {
+  
+}
 
 create numArray of numbers from 1 to 100
   index 0 should have the value of 1
@@ -37,7 +43,7 @@ run function that compares new value/computer value user input
 
 
 
-store the first index - wini
+store the first index - win
 
 compare the value of the index with the guess
 
@@ -54,7 +60,16 @@ If the number is too low, print "Your number is too low. You are not ready to be
 
 Use Stack data structure or hash table
 
-Stretch Goal: Let them try again.
+
+<!-- Code -->
+// console.log "enter a number"
+// variable to store user input
+// variable to store 1-100 array
+// function to compare input and array
+// message for user: higher/lower/winning!
+//   if else
+
+
 
 
 
